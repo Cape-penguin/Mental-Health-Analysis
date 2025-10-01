@@ -1,0 +1,31 @@
+logging:
+  level: info
+project:
+  name: "Mental Health Analysis: mental illness classification"
+# data
+train_file: ./data/sample-in-domain.csv
+# dataloader
+batch_size: [16, 16, 64]
+num_workers: [4, 4, 4]
+pin_memory: [false, false, false]
+shuffle: [true, false, false]
+collate_fns: [none, none, none]
+drop_last: [true, true, true]
+# model option
+bert_config: './configs/config_bert.json'
+text_encoder: 'klue/bert-base'
+embed_dim: 256
+num_classes: 12
+# tokenizer option
+tokenizer: 'klue/roberta-base'
+seq_len: 512
+# optimizer & scheduler
+optimizer: {opt: adamW, lr: 0.0001, weight_decay: 0.02}
+scheduler: {sched: cosine, lr: 0.0001, epochs: 30,  min_lr: 0.00001, decay_rate: 1, warmup_lr: 0.00001,  warmup_epochs: 20, cooldown_epochs: 0}
+# train option
+seed: 42
+epoch: 20
+# Index sorter option
+queue_size: 16
+# spurious correlated keywords
+keywords: ./configs/keywords.json
