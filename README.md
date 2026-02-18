@@ -4,6 +4,26 @@ This repo is for the paper "Mitigating Spurious Correlations in Mental Health An
 ## Notice
 - [*Feb. 8, 2026*] The repository has been fully organized and the source code is now officially uploaded.
 
+## Project Structure
+Short Document for Mental-Health Analysis.
+
+```
+root/
+├── configs/
+│   ├── config_bert.json        # hyperparameters for the BERT model.
+│   ├── pretrain.yaml           # training hyperparameters.
+│   └── sample-keywords.json    # pre-defined spurious correlation token IDs.
+├── data/                       # storage for raw and processed text datasets in `.csv` format.
+├── src/                    
+│   ├── dataset/        # custom DataLoaders that parse CSV files and transform raw text.
+│   ├── loss/           # implements the objective functions.
+│   ├── model/          # contains the implementation of the proposed method.
+│   ├── optim/          # manages the optimization logic (AdamW) used during the training process.
+│   └── scheduler/      # contains learning rate schedulers.
+└── Pretrain.py         # main execution script, including environment setup, model initialization, 
+                          and the training loop based on the proposed methodology.
+```
+
 ## Requirements
 - torch 2.3.0
 - transformer 4.41.1
