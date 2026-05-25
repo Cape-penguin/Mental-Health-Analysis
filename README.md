@@ -30,10 +30,12 @@ root/
 - transformer 4.41.1
 
 ## Pre-training
+Run the following command to start the pre-training process. Once the training is complete, the resulting model checkpoints and outputs will be saved in the output directory (`./outputs/posts`).
 ```
 python Pretrain.py --output_dir ./outputs/posts
 ```
 
 ## Reference
 ```
+# The citation format will be updated once the paper is published in the ACM Digital Library.
 ```
