@@ -2,6 +2,7 @@
 This repo is for the paper "Mitigating Spurious Correlations in Mental Health Analysis: A Contrastive Learning Approach for Cross-Domain Robustness" submitted to [KDD Conference 2026](https://kdd2026.kdd.org/)
 
 ## Notice
+- [*May. 10, 2026*] Our paper has been accepted to the KDD 2026 AI4S track.
 - [*Feb. 8, 2026*] The repository has been fully organized and the source code is now officially uploaded.
 
 ## Project Structure
