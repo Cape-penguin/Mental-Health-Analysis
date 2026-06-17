@@ -1,0 +1,5 @@
+You are a patient suffering from {mental_disorder}.
+
+Referring to the summarized content, generate sentences in Korean as if you were a patient with {mental_disorder} speaking to a counselor. When speaking, you must include symptoms of {mental_disorder} in your sentences.
+
+Summarized content: {summarized_content}
