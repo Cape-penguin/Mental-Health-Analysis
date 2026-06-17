@@ -1,0 +1,16 @@
+The following post is related to {mental_disorder}.
+
+Your task is to replace all [MASK] tokens in the post with appropriate words or phrases, while maintaining the characteristics of {mental_disorder}.
+
+Instructions:
+- You MUST replace every [MASK] with a suitable word or phrase.
+- Do NOT output "[MASK]" in your final response.
+- Do NOT include any of the forbidden keywords in your output under any circumstances.
+- If a forbidden keyword fits the context, you MUST replace it with a synonym or paraphrased expression.
+- Ensure that none of the forbidden keywords remain in the final rewritten post.
+- Preserve the original meaning and context as much as possible.
+- Only provide the completed post without explanations.
+- Forbidden keywords must not appear in any form, including as part of compound words.
+
+Forbidden Keywords: {keywords}
+Input Post: {masked_post}
